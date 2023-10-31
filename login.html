@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Food Friends</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s12">
+      <a href="https://www.instagram.com">
+        <img src="Image/instagram.png" alt="instagram" height="40px">
+      <a href="https://www.facebook.com">
+        <img src="Image/facebook.png" alt="facebook" height="40px">
+      <a href="https://www.twitter.com">
+        <img src="Image/twitter.png" alt="discord" height="40px">
+      <a href="https://www.tumblr.com">
+        <img src="Image/tumblr.png" alt="skype" height="40px">
+    </div>
+    <br><br>
+    <div class="w3-col s2">
+      <a href="homepage.html" class="w3-button w3-block w3-black">Home</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="maps.html" class="w3-button w3-block w3-black">Map</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="Reviews.html" class="w3-button w3-block w3-black">Reviews</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="sbussiness.html" class="w3-button w3-block w3-black">Supporting Businesses</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="sup.html" class="w3-button w3-block w3-black">Sign up</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="login.html" class="w3-button w3-block w3-black">Login</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- Log in -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Log in</span></h5>
+  </div>
+</div>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            margin-top: 50px;
+        }
+        input[type=text], input[type=email], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            margin-top: 50px;
+        }
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type=file] {
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+
+
+<div class="container">
+    <form action="/action_page.php">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Your password.." required>
+ 
+          <button type="submit">Sign Up</button>
+    </form>
+    <a href="sup.html">Don't have an account click here to create one.</a>
+</div>
+
+</body>
+</html>
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Thank you to Nadene and Kate. 
+    <a href="https://au.linkedin.com/in/nadene-claydon-b6001732">
+      <img src="Image/nadene.jpg" alt="nadene" width="100px">
+      <a href="">
+        <img src="Image/kate.jpg" alt="kate" width="100px">
+  </p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
