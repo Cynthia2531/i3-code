@@ -24,13 +24,13 @@ body, html {
 }
 </style>
 </head>
-
 <body>
 
 <!-- Links (sit on top) -->
 <div class="w3-top">
   <div class="w3-row w3-padding w3-black">
     <div class="w3-col s12">
+      <img src="Image/i3logo.png" height="40px">
       <a href="https://www.instagram.com">
         <img src="Image/instagram.png" alt="instagram" height="40px">
       <a href="https://www.facebook.com">
@@ -70,30 +70,90 @@ body, html {
 <!-- Add a background color and large text to the whole page -->
 <div class="w3-sand w3-grayscale w3-large">
 
-<!-- AWhat we are trying to achieve -->
-<div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">What we are trying to achieve</span></h5>
-    <p>hello</p>
-  </div>
-</div>
+  <!-- review -->
+  <style>
+  body {
+            font-family: Arial, sans-serif;
+        }
 
-<!-- How to help -->
-<div class="w3-container" id="menu">
-  <div class="w3-content" style="max-width:700px">
- 
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">How to help</span></h5>
-    <p>WORDS</p>
-  </div>
-</div>
+.container {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  }
+  
+  select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  }
+         
+  button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+   width: 100%;
+  }
+  
+  button:hover {
+  opacity: 0.8;
+  }
 
-<!-- How does it work -->
-<div class="w3-container" id="where" style="padding-bottom:32px;">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
-    <p>WORDS YET AGAIN</p>
-  </div>
+  .past-reviews {
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+        }
+
+  .review {
+  margin-bottom: 20px;
+  border: 5px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  }
+
+  </style>
+ <!-- past reviews -->
+ <div class="w3-content" style="max-width:700px">
+  <h5 class="w3-center w3-padding-32"><span class="w3-tag w3-wide">Past Reviews</span></h5>
 </div>
+<div class="past-reviews">
+  <div class="review">
+      <p><strong>Volunteer:</strong> John Doe</p>
+      <p><strong>Review:</strong> Excellent organization! I had a great experience volunteering.</p>
+  </div>
+  <div class="review">
+      <p><strong>Shelter:</strong> XYZ Shelter</p>
+      <p><strong>Review:</strong> Food Friends has been a valuable partner. Highly recommended.</p>
+  </div>
+  <!-- Add more reviews dynamically here -->
+</div>
+<!--submit a review -->
+ <div class="w3-container" id="about">
+    <div class="w3-content" style="max-width:700px">
+      <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Leave a review</span></h5>
+    </div>
+  <div class="container">
+    <form action="/submit_review.php" method="post">
+        <label for="user-type">Choose your role:</label>
+        <select id="user-type" name="user-type">
+            <option value="volunteer">Volunteer</option>
+            <option value="shelter">Homeless Shelter</option>
+            <option value="business">Donating Business </option>
+        </select>
+
+        <label for="review">Your Review:</label>
+        <textarea id="review" name="review" placeholder="Write your review..." required></textarea>
+
+        <button type="submit">Submit Review</button>
+    </form>
+  </div>
 
 <!-- End page content -->
 </div>
