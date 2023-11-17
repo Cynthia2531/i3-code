@@ -12,16 +12,56 @@ body, html {
   font-family: "Inconsolata", sans-serif;
 }
 
-.bgimg {
-  background-position: center;
-  background-size: cover;
-  background-image: url("/w3images/coffeehouse.jpg");
-  min-height: 75%;
-}
+header {
+    margin-top: 2cm;
+  }
 
 .menu {
   display: none;
 }
+        .container {
+            width: 50%;
+            margin: auto;
+            margin-top: 50px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+        .business-info {
+            display: flex;
+            align-items: center;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .donation-item {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .donatingbusiness img {
+            width: 50px;
+            height: auto;
+            border-radius: 5px;
+        }
 </style>
 </head>
 
@@ -64,20 +104,23 @@ body, html {
 </div>
 
 <!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  
+<header class=" w3-display-container w3-grayscale-min" id="home">
+  <img src="Image/title card.png" alt="titlescreen" width="1230px">
 </header>
 
 <!-- Add a background color and large text to the whole page -->
-<div class="w3-sand w3-grayscale w3-large">
+<div class="w3-sand w3-large">
+  <div style="background-color: #f0f0eb;">
 
-<!-- AWhat we are trying to achieve -->
-<div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">What we are trying to achieve</span></h5>
-    <p>hello</p>
-  </div>
+<!-- supporting businesses -->
+<div class="w3-content" style="max-width:700px">
+  <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Supporting Businesses</span></h5>
 </div>
+<div style="text-align: center;">
+<img src="Image/KrispyKreme.svg.png" alt="KrispyKreme" width="100px">
+<p>Krispy Kreme is one of the business that agreed to donate.</p>
+</div>
+
 
 <!-- How to help -->
 <div class="w3-container" id="menu">
